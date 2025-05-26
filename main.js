@@ -31,9 +31,10 @@ function render() {
       </div>
     </div>
     <div class="credits">
-      <span>Desenvolvido por Diogo Buzatto</span>
-      <img src="icons/github.svg" class="github-icon" alt="GitHub"/>
-      <a href="https://github.com/dbuzatto" target="_blank">GitHub</a>
+      <a href="https://github.com/dbuzatto" target="_blank" class="credits-link">
+        <span>Desenvolvido por Diogo Buzatto</span>
+        <img src="icons/github.svg" class="github-icon" alt="GitHub"/>
+      </a>
     </div>
   `;
   window.lucide && lucide.createIcons();
