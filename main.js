@@ -33,7 +33,7 @@ function render() {
     <div class="credits">
       <a href="https://github.com/dbuzatto" target="_blank" class="credits-link">
         <span>Desenvolvido por Diogo Buzatto</span>
-        <img src="icons/github.svg" class="github-icon" alt="GitHub"/>
+        <img src="icons/Github.svg" class="github-icon" alt="GitHub"/>
       </a>
     </div>
   `;
