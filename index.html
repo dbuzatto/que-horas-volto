@@ -4,14 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Que horas volto?</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="stylesheet" href="style.css"/>
-  <script>const theme=localStorage.getItem("theme")||"light";document.documentElement.classList.add(`theme-${theme}`);</script>
+  <script>
+    const theme = localStorage.getItem("theme") || "light";
+    document.documentElement.classList.add(`theme-${theme}`);
+  </script>
   <script src="https://unpkg.com/lucide@latest" defer></script>
   <script type="module" src="main.js" defer></script>
 </head>
 <body>
   <div class="app-brand">
-    <img src="icons/icon_app.png" class="app-icon" alt="App Icon"/>
+    <img id="appIcon" src="icons/icon_app.png" class="app-icon" alt="App Icon"/>
     <span class="app-brand-text">Que horas volto?</span>
   </div>
   <div id="root"></div>

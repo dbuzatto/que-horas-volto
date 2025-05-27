@@ -131,24 +131,27 @@ label {
   font-weight: 500;
 }
 
-input[type="time"] {
+input[type="time"],
+input[type="number"] {
   width: 100%;
   padding: .5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
+  background: var(--input-bg);
+  color: var(--input-text);
   transition: border-color .2s, background .3s, color .3s;
+}
+
+html.theme-dark input[type="time"],
+html.theme-dark input[type="number"] {
   background: var(--input-bg);
   color: var(--input-text);
 }
 
-html.theme-dark input[type="time"] {
-  background: var(--input-bg);
-  color: var(--input-text);
-}
-
-input[type="time"]:focus {
+input[type="time"]:focus,
+input[type="number"]:focus {
   outline: none;
   border-color: var(--accent);
 }
@@ -159,8 +162,12 @@ input[type="time"]:focus {
 }
 
 .output strong {
-  color: inherit;
   font-weight: bold;
+  color: var(--text-light);
+}
+
+html.theme-dark .output strong {
+  color: var(--text-dark);
 }
 
 .credits {
